@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivory Salon by Anum Zubair | Luxury Beauty Salon in Gulshan-e-Iqbal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.12.16/framer-motion.umd.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-glass border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex flex-col">
+                    <span class="text-2xl font-bold tracking-tighter playfair text-[#C5A059]">IVORY SALON</span>
+                    <span class="text-[10px] tracking-[0.2em] uppercase -mt-1 opacity-70">by Anum Zubair</span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+                    <a href="#home" class="hover:text-[#C5A059] transition-colors">Home</a>
+                    <a href="#about" class="hover:text-[#C5A059] transition-colors">About</a>
+                    <a href="#services" class="hover:text-[#C5A059] transition-colors">Services</a>
+                    <a href="#gallery" class="hover:text-[#C5A059] transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-[#C5A059] transition-colors">Contact</a>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <a href="tel:03452345055" class="hidden sm:flex items-center text-[#C5A059] font-bold">
+                        <i data-lucide="phone" class="w-4 h-4 mr-2"></i>
+                        0345-2345055
+                    </a>
+                    <button onclick="scrollToSection('booking')" class="bg-[#C5A059] text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#b08e4d] transition-all shadow-lg">
+                        BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Modern aesthetic placeholder -->
+            <div class="w-full h-full bg-[url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80')] bg-cover bg-center brightness-[0.7]"></div>
+        </div>
+        <div class="relative z-10 text-center px-4">
+            <h2 class="text-white text-lg tracking-[0.4em] uppercase mb-4 opacity-90">Gulshan-e-Iqbal Branch</h2>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl text-white mb-6 playfair">Enhancing Your <br><span class="italic">Natural Beauty</span></h1>
+            <p class="text-white text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light opacity-80">Experience premium beauty care and personalized luxury at Karachi's most elegant salon destination.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="scrollToSection('services')" class="bg-white text-charcoal px-10 py-4 rounded-full font-bold hover:bg-[#C5A059] hover:text-white transition-all">VIEW SERVICES</button>
+                <button onclick="window.open('https://wa.me/923452345055')" class="border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-charcoal transition-all flex items-center justify-center">
+                    <i data-lucide="message-circle" class="w-5 h-5 mr-2"></i> WHATSAPP US
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="py-12 bg-[#F4E0DB]/30 border-b border-orange-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="flex justify-center mb-2 text-[#C5A059]"><i data-lucide="sparkles"></i></div>
+                <h4 class="font-bold text-sm uppercase tracking-tighter">Premium Products</h4>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center mb-2 text-[#C5A059]"><i data-lucide="shield-check"></i></div>
+                <h4 class="font-bold text-sm uppercase tracking-tighter">Hygiene Guaranteed</h4>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center mb-2 text-[#C5A059]"><i data-lucide="users"></i></div>
+                <h4 class="font-bold text-sm uppercase tracking-tighter">Expert Stylists</h4>
+            </div>
+            <div class="text-center">
+                <div class="flex justify-center mb-2 text-[#C5A059]"><i data-lucide="heart"></i></div>
+                <h4 class="font-bold text-sm uppercase tracking-tighter">Luxury Experience</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+            <div class="w-full md:w-1/2 relative">
+                <div class="aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80" alt="Anum Zubair" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-8 -right-8 bg-[#C5A059] p-8 rounded-2xl hidden lg:block text-white shadow-xl">
+                    <p class="text-3xl font-bold playfair">10+</p>
+                    <p class="text-xs uppercase tracking-widest">Years Experience</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2">
+                <h3 class="text-[#C5A059] uppercase tracking-widest text-sm font-bold mb-4 italic">Our Story</h3>
+                <h2 class="text-4xl md:text-5xl playfair mb-6 leading-tight">About Ivory Salon & <br>Anum Zubair</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Founded by expert beautician Anum Zubair, Ivory Salon (Gulshan Branch) is a sanctuary where tradition meets modern luxury. We believe that beauty is an art form that requires attention to detail, high-quality products, and a deep understanding of our clients' needs.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-8">
+                    Our mission is to empower every woman who walks through our doors, leaving her feeling confident, refreshed, and radiant. Whether it's your big day or a routine pampering session, we ensure excellence in every stroke.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="border-l-4 border-[#C5A059] pl-4">
+                        <p class="font-bold text-lg mb-1">Quality</p>
+                        <p class="text-sm text-gray-500">Only premium international brands used.</p>
+                    </div>
+                    <div class="border-l-4 border-[#C5A059] pl-4">
+                        <p class="font-bold text-lg mb-1">Expertise</p>
+                        <p class="text-sm text-gray-500">Certified professionals for all services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-[#FCF9F5]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl playfair mb-4">Our Signature Services</h2>
+                <div class="w-24 h-1 bg-[#C5A059] mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-xl mx-auto">Explore our range of specialized beauty treatments designed for the modern woman.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group service-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-orange-50">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefad15c3?auto=format&fit=crop&q=80" alt="Makeup" class="w-full h-full object-cover service-img transition-all duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl playfair font-bold">Makeup Artistry</h3>
+                            <span class="text-[#C5A059] font-bold">From 5,000/-</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Bridal, Party, and Signature Soft Glam looks by Anum Zubair and team.</p>
+                        <ul class="space-y-2 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Bridal HD Makeup</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Engagement / Nikkah Look</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Party & Festive Makeup</li>
+                        </ul>
+                        <button onclick="scrollToSection('booking')" class="w-full py-3 border border-[#C5A059] text-[#C5A059] rounded-xl font-bold hover:bg-[#C5A059] hover:text-white transition-all">BOOK SERVICE</button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group service-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-orange-50">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&q=80" alt="Hair" class="w-full h-full object-cover service-img transition-all duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl playfair font-bold">Hair Styling</h3>
+                            <span class="text-[#C5A059] font-bold">From 3,000/-</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Transform your locks with our expert hair color, cutting, and styling services.</p>
+                        <ul class="space-y-2 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Balayage & Highlights</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Keratin & Rebonding</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Advanced Hair Cuts</li>
+                        </ul>
+                        <button onclick="scrollToSection('booking')" class="w-full py-3 border border-[#C5A059] text-[#C5A059] rounded-xl font-bold hover:bg-[#C5A059] hover:text-white transition-all">BOOK SERVICE</button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group service-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-orange-50">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80" alt="Skincare" class="w-full h-full object-cover service-img transition-all duration-700">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl playfair font-bold">Skincare & Spa</h3>
+                            <span class="text-[#C5A059] font-bold">From 4,500/-</span>
+                        </div>
+                        <p class="text-gray-500 text-sm mb-6">Deep rejuvenation and glow-boosting facials tailored to your skin type.</p>
+                        <ul class="space-y-2 mb-8 text-sm text-gray-600">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Hydra Facial & Whitening</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Dermacos & Jansen Facials</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i> Mani-Pedi Spa</li>
+                        </ul>
+                        <button onclick="scrollToSection('booking')" class="w-full py-3 border border-[#C5A059] text-[#C5A059] rounded-xl font-bold hover:bg-[#C5A059] hover:text-white transition-all">BOOK SERVICE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Transformation -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-center text-4xl playfair mb-16">The Ivory Transformation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="relative rounded-3xl overflow-hidden group">
+                    <div class="flex">
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&q=80" alt="Before" class="w-full h-[400px] object-cover grayscale">
+                            <div class="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 text-xs rounded-full">BEFORE</div>
+                        </div>
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80" alt="After" class="w-full h-[400px] object-cover">
+                            <div class="absolute top-4 right-4 bg-[#C5A059] text-white px-3 py-1 text-xs rounded-full">AFTER</div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-[#F4E0DB]/20 border-t border-[#F4E0DB]">
+                        <p class="font-bold">Bridal Transformation</p>
+                        <p class="text-sm text-gray-500">Glowing skin and elegant hair for the special day.</p>
+                    </div>
+                </div>
+                <div class="relative rounded-3xl overflow-hidden group">
+                    <div class="flex">
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80" alt="Before" class="w-full h-[400px] object-cover grayscale">
+                            <div class="absolute top-4 left-4 bg-black/50 text-white px-3 py-1 text-xs rounded-full">BEFORE</div>
+                        </div>
+                        <div class="w-1/2 relative">
+                            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&q=80" alt="After" class="w-full h-[400px] object-cover">
+                            <div class="absolute top-4 right-4 bg-[#C5A059] text-white px-3 py-1 text-xs rounded-full">AFTER</div>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-[#F4E0DB]/20 border-t border-[#F4E0DB]">
+                        <p class="font-bold">Hair Color & Texture Treatment</p>
+                        <p class="text-sm text-gray-500">Premium Balayage and Silk Protein smoothing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-[#FCF9F5]">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl playfair mb-2">Our Portfolio</h2>
+                    <p class="text-gray-500">Glimpses of beauty created at Ivory Salon.</p>
+                </div>
+                <a href="https://instagram.com" class="text-[#C5A059] font-bold border-b-2 border-[#C5A059] pb-1 hover:opacity-70 transition-all mb-4 md:mb-0">FOLLOW ON INSTAGRAM</a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="h-80 rounded-2xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1595475038784-bbe439ff41e6?auto=format&fit=crop&q=80" class="w-full h-full object-cover"></div>
+                <div class="h-80 rounded-2xl overflow-hidden shadow-lg md:mt-8"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80" class="w-full h-full object-cover"></div>
+                <div class="h-80 rounded-2xl overflow-hidden shadow-lg"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80" class="w-full h-full object-cover"></div>
+                <div class="h-80 rounded-2xl overflow-hidden shadow-lg md:mt-8"><img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?auto=format&fit=crop&q=80" class="w-full h-full object-cover"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex justify-center text-[#C5A059] mb-8">
+                <i data-lucide="star" class="fill-current"></i>
+                <i data-lucide="star" class="fill-current"></i>
+                <i data-lucide="star" class="fill-current"></i>
+                <i data-lucide="star" class="fill-current"></i>
+                <i data-lucide="star" class="fill-current"></i>
+            </div>
+            <p class="text-2xl md:text-3xl playfair italic leading-relaxed mb-10">"Absolutely loved my experience at Ivory Salon. The hygiene standards are impeccable and Anum Zubair's expertise in makeup is unmatched in Gulshan. Highly recommended!"</p>
+            <div class="flex items-center justify-center">
+                <div class="w-12 h-12 rounded-full bg-orange-100 mr-4"></div>
+                <div class="text-left">
+                    <p class="font-bold">Sara Khan</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-widest">Verified Customer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking & Contact Section -->
+    <section id="booking" class="py-24 bg-[#F4E0DB]/40">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-4xl playfair mb-6">Book Your Appointment</h2>
+                <p class="text-gray-600 mb-10">Ready to glow? Fill out the form below or reach us directly via WhatsApp/Phone for a quicker response.</p>
+                
+                <form id="bookingForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest mb-2 opacity-60">Full Name</label>
+                            <input type="text" required class="w-full bg-white border border-orange-100 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C5A059]/30 transition-all" placeholder="Enter your name">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-widest mb-2 opacity-60">Phone Number</label>
+                            <input type="tel" required class="w-full bg-white border border-orange-100 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C5A059]/30 transition-all" placeholder="03XX-XXXXXXX">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest mb-2 opacity-60">Service Interest</label>
+                        <select class="w-full bg-white border border-orange-100 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C5A059]/30 transition-all appearance-none">
+                            <option>Bridal Makeup</option>
+                            <option>Party Makeup</option>
+                            <option>Hair Coloring</option>
+                            <option>Facial/Skin Treatment</option>
+                            <option>Other Services</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest mb-2 opacity-60">Preferred Date</label>
+                        <input type="date" class="w-full bg-white border border-orange-100 rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-[#C5A059]/30 transition-all">
+                    </div>
+                    <button type="submit" class="w-full gold-gradient text-white py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition-all">CONFIRM BOOKING REQUEST</button>
+                </form>
+            </div>
+
+            <div id="contact">
+                <h3 class="text-2xl playfair mb-8">Visit Our Gulshan Branch</h3>
+                <div class="space-y-6 mb-12">
+                    <div class="flex items-start">
+                        <div class="bg-white p-3 rounded-lg mr-4 text-[#C5A059] shadow-sm"><i data-lucide="map-pin"></i></div>
+                        <p class="text-gray-600">Bungalow # C-5, Allama Shabbir Ahmed Usmani Rd, near Practical Schooling System, Block 13D, Gulshan-e-Iqbal, Karachi</p>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-white p-3 rounded-lg mr-4 text-[#C5A059] shadow-sm"><i data-lucide="phone-call"></i></div>
+                        <div>
+                            <p class="text-gray-600">0345-2345055</p>
+                            <p class="text-xs text-gray-400">Available: 11:00 AM - 08:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Placeholder -->
+                <div class="w-full h-[300px] bg-gray-200 rounded-3xl overflow-hidden shadow-inner relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.33777033503!2d67.08642231500406!3d24.91032158403164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f169f4e2f69%3A0x897989396f4e64f0!2sIvory%20Salon!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-1">
+                <div class="flex flex-col mb-6">
+                    <span class="text-2xl font-bold tracking-tighter playfair text-[#C5A059]">IVORY SALON</span>
+                    <span class="text-[10px] tracking-[0.2em] uppercase -mt-1 opacity-50">by Anum Zubair</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-6">Redefining beauty standards in Karachi through excellence, hygiene, and luxury care.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#C5A059] transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                    <a href="#" class="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center hover:bg-[#C5A059] transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-[#C5A059]">Quick Links</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Our Services</a></li>
+                    <li><a href="#booking" class="hover:text-white transition-colors">Book Appointment</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-[#C5A059]">Our Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li>Bridal Makeup</li>
+                    <li>Hair Color & Cutting</li>
+                    <li>Advanced Facials</li>
+                    <li>Manicure & Pedicure</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-[#C5A059]">Working Hours</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li>Mon - Sat: 11:00 AM - 08:00 PM</li>
+                    <li>Sunday: 12:00 PM - 07:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 border-t border-white/10 mt-16 pt-8 text-center text-xs text-gray-500 uppercase tracking-[0.2em]">
+            &copy; 2024 Ivory Salon by Anum Zubair. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col space-y-4 z-40">
+        <a href="https://wa.me/923452345055" class="bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+        </a>
+        <a href="tel:03452345055" class="bg-[#C5A059] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all flex items-center justify-center md:hidden">
+            <i data-lucide="phone" class="w-6 h-6"></i>
+        </a>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+</html>
